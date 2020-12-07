@@ -2,3 +2,16 @@ img.resize {
     max-width:50%;
     max-height:50%;
   }
+
+  body {
+    margin: 25px;
+    background-color: rgb(240,240,240);
+    font-family: arial, sans-serif;
+    font-size: 14px;
+  }
+
+  /* thead, tfoot {
+    background: blue;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+  } */
