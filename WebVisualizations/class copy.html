@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Latitude and Weather</title> 
+        <link rel = "stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel = "stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+    <body>
+        <div class="container">
+        <nav style="background-color: rgb(26, 161, 161);" class="navbar navbar-expand-md bg-light fixed-top">
+            <a style="color: azure;" class="navbar-brand" href="index.html">Latitude & Weather</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item active">
+                  <a style="color: azure;" class="nav-link" href="Comparisons.html">Comparison <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a style="color: azure;" class="nav-link" href="Data.html">Data</a>
+                </li>                
+                <li class="nav-item dropdown">
+                  <a style="color: azure;" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="NH_Max_Temp_Lats.html">NH Max Temps</a><br>
+                        <a class="dropdown-item" href="SH_Max_Temp_Lats.html">SH Max Temps</a><br>
+                        <a class="dropdown-item" href="NH_Humidity_Lats.html">SNH Humidity</a><br>
+                        <a class="dropdown-item" href="SH_Humidity_Lats.html">NH Humidity</a><br>
+
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </div>
+        </nav>
+    <div class="container">      
+        <div class="row main">
+             <div class="col-lg-6 col-sm-12">
+                <h2>Summary: Impact of Latitude on Weather</h2>
+                <img src="Assets/nh_max_temp_latitude_lr.png"width="501" height="324">
+                <p>In this project we wanted to take a look at some weather data to see what impacts latitude had on weather. In particular, we will be looking at the following observations:</p>
+                <ul>
+                    <li>The relationship between the Max Observed Temperature and Latitude for cities located in the Northern Hemisphere</li>
+                    <li>The relationship between the Max Observed Temperature and Latitude for cities located in the Southern Hemisphere</li>
+                    <li>The relationship between Humidity and Latitude for cities located in the Northern Hemisphere</li>
+                    <li>The relationship between Humidity and Latitude for cities located in the Southern Hemisphere</li>
+                </ul>
+                <p>For this analysis, we generated a random list of over 500 cities and pulled data from the OpenWeatherMap API.</p>
+                <p>Once we analyzed the data, we used Matplotlib to vizualize the relationships between the various aspects of weather and a citie's latitude. This site provides the source data and the vizualization we created to display these relationships. Additionally, we have included explanations and descriptions of any trends we observed.</p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <h2>Visualizations</h2>
+                            <a href="NH_Max_Temp_Lats.html"><img src="Assets/nh_max_temp_latitude_lr.png" width="200.4" height="129.6"></a>
+                            <a href="SH_Max_Temp_Lats.html"><img src="Assets/sh_max_temp_latitude_lr.png" width="200.4" height="129.6"></a>
+                            <a href="NH_Humidity_Lats.html"><img src="Assets/nh_humidity_latitude_lr.png" width="200.4" height="129.6"></a>
+                            <a href="SH_Humidity_Lats.html"><img src="Assets/sh_humidity_latitude_lr.png" width="200.4" height="129.6"></a>
+                    </div>         
+            </div>
+        </div>
+        
+        
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
